@@ -24,7 +24,7 @@ mod windows_impl {
     use super::*;
     use std::mem::size_of;
     use windows::Win32::Foundation::{BOOL, HANDLE, HWND, LPARAM, POINT, RECT};
-    use windows::Win32::Graphics::Dxva::{
+    use windows::Win32::Devices::Display::{
         DestroyPhysicalMonitors, GetMonitorBrightness, GetNumberOfPhysicalMonitorsFromHMONITOR,
         GetPhysicalMonitorsFromHMONITOR, SetMonitorBrightness, PHYSICAL_MONITOR,
     };
